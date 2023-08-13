@@ -220,7 +220,9 @@ iframe {
     }
 
     audio {
+        position: absolute;
         width: 45%;
+        left: 16rem
     }
     
     h3,
@@ -264,7 +266,64 @@ iframe {
     #song-4 h2 {
         font-size: 1.5rem;
     }
+}
 
+    @media only screen and (max-width: 378px) {
+        /* INDEX INDEX INDEX */
+        .popupwindow {
+            height: 10rem;
+            width: 18.9rem;
+        }
+    
+        audio {
+            position: absolute;
+            width: 45%;
+            left: 15rem
+        }
+        
+        h3,
+        p {
+            font-size: 85%;
+        }
+    
+        #abstract {
+            font-size: 1rem;
+        }
+    
+        .left {
+            margin-right: 1.5rem;
+        }
+    
+        .left, .right {
+            padding: 0.5rem;
+        }
+    
+        .songs-container{
+            top: 83%;
+            width: 22rem;
+        }
+    
+        .playlist-container {
+            width: 23rem;
+        }
+    
+        .gradient_bg {
+            background: linear-gradient(-45deg, #ffadcf, #9c6672, #6d6672, #483e4b);
+            background-size: 400% 400%;
+            -webkit-animation: gradient 5s ease infinite;
+                    animation: gradient 5s ease infinite;
+            height: 100vh;
+        }
+    
+        h2 {
+            font-size: 1.8rem;
+        }
+    
+        #song-4 h2 {
+            font-size: 1.5rem;
+        }
+
+        
     @-webkit-keyframes gradient {
         0% {
             background-position: 0% 50%;
