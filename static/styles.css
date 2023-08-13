@@ -71,6 +71,7 @@ p {
     height: 10rem;
     width: 27rem;
     border-radius: 0.3rem;
+    animation: appear-animation 1s linear;
 }
 
 .upperbanner {
@@ -127,6 +128,7 @@ audio {
 
 #playlist {
     display: none;
+    animation: appear-animation 1s linear;
 }
 
 audio::-webkit-media-controls-panel {
@@ -226,12 +228,65 @@ iframe {
         font-size: 85%;
     }
 
+    #abstract {
+        font-size: 1rem;
+    }
+
     .left {
         margin-right: 1.5rem;
     }
 
     .left, .right {
         padding: 0.5rem;
+    }
+
+    .songs-container{
+        top: 65%;
+        width: 22rem;
+    }
+
+    .playlist-container {
+        width: 23rem;
+    }
+
+    .gradient_bg {
+        background: linear-gradient(-45deg, #ffadcf, #9c6672, #6d6672, #483e4b);
+        background-size: 400% 400%;
+        -webkit-animation: gradient 5s ease infinite;
+                animation: gradient 5s ease infinite;
+        height: 100vh;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    #song-4 h2 {
+        font-size: 1.5rem;
+    }
+
+    @-webkit-keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
     }
 
 }
@@ -258,4 +313,16 @@ iframe {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@keyframes appear-animation {
+    0% { 
+
+        opacity: 0;
+    } 
+
+    100% {
+
+        opacity: 1;
+    }
 }
