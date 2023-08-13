@@ -212,7 +212,7 @@ iframe {
 
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES*/
 /* SMALL SMALL SMALL SMALL SMALL SMALL SMALL */
-@media only screen and (max-width: 445px) {
+@media only screen and (max-width: 477px) {
     /* INDEX INDEX INDEX */
     .popupwindow {
         height: 10rem;
@@ -266,9 +266,10 @@ iframe {
     #song-4 h2 {
         font-size: 1.5rem;
     }
+
 }
 
-    @media only screen and (max-width: 378px) {
+    @media only screen and (max-width: 414px) {
         /* INDEX INDEX INDEX */
         .popupwindow {
             height: 10rem;
@@ -299,7 +300,7 @@ iframe {
         }
     
         .songs-container{
-            top: 83%;
+            top: 65%;
             width: 22rem;
         }
     
